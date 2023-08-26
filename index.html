@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .body {
+        font-size: 18px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .container {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        animation: test 3s infinite;
+    }
+
+    .column {
+        width: 100%;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        padding-top: 20px;
+        border-top: 1px solid black;
+        padding-bottom: 20px;
+    }
+
+    .column img {
+        display: block;
+        height: 200px;
+    }
+
+    .column img:hover {
+        animation: mymove 5s infinite;
+        transition: all 0.5s;
+    }
+
+    @keyframes mymove {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(180deg);
+        }
+    }
+
+    @keyframes test {
+        0% {
+            background-color: red;
+        }
+        50% {
+            background-color: blue;
+        }
+        100% {
+            background-color: green;
+        }
+    }
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALBUM ẢNH</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">ALBUM ẢNH</h1>
+        <div class="column">
+            <img src="https://thuthuatphanmem.vn/uploads/2018/09/11/hinh-anh-dep-6_044127357.jpg" alt="123" />
+            <img
+                src="https://scr.vn/wp-content/uploads/2020/07/H%C3%ACnh-%E1%BA%A3nh-phong-c%E1%BA%A3nh-y%C3%AAn-b%C3%ACnh.jpg" />
+            <img src="https://img4.thuthuatphanmem.vn/uploads/2020/08/28/hinh-anh-dep-ve-thien-nhien_101329902.jpg" />
+            <img src="https://pdp.edu.vn/wp-content/uploads/2020/12/hinh-anh-dep-thien-nhien-4.jpg" />
+        </div>
+        <div class="column">
+            <img src="https://thuthuatphanmem.vn/uploads/2018/09/11/hinh-anh-dep-6_044127357.jpg" alt="123" />
+            <img
+                src="https://scr.vn/wp-content/uploads/2020/07/H%C3%ACnh-%E1%BA%A3nh-phong-c%E1%BA%A3nh-y%C3%AAn-b%C3%ACnh.jpg" />
+            <img src="https://img4.thuthuatphanmem.vn/uploads/2020/08/28/hinh-anh-dep-ve-thien-nhien_101329902.jpg" />
+            <img src="https://pdp.edu.vn/wp-content/uploads/2020/12/hinh-anh-dep-thien-nhien-4.jpg" />
+        </div>
+    </div>
+</body>
+
+</html>
